@@ -1,0 +1,1 @@
+-- Policz sumę wszystkich wynagrodzeń

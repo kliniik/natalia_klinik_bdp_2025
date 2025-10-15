@@ -1,0 +1,1 @@
+-- Zlicz i pogrupuj pracowników według pola ‘stanowisko’

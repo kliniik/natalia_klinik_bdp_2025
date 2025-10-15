@@ -1,0 +1,1 @@
+-- Wyznacz liczbę premii przyznanych dla pracowników danego stanowiska

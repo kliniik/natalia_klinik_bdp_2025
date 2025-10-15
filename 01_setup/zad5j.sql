@@ -1,0 +1,1 @@
+-- Uszereguj pracowników według pensji i premii malejąco

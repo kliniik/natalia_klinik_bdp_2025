@@ -1,0 +1,1 @@
+-- Policz sumę wynagrodzeń w ramach danego stanowiska
