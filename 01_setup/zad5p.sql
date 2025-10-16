@@ -6,3 +6,4 @@ WHERE id_pracownika IN (
     WHERE p.kwota < 1200
 );
 
+-- jeśli pracownicy są powiązani kluczami obcymi, należy użyć ON DELETE CASCADE
