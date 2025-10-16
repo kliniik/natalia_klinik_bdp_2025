@@ -61,9 +61,6 @@ VALUES
 INSERT INTO ksiegowosc.wynagrodzenie
 (id_wynagrodzenia, data, id_pracownika, id_godziny, id_pensji, id_premii)
 VALUES
-INSERT INTO ksiegowosc.wynagrodzenie
-(id_wynagrodzenia, data, id_pracownika, id_godziny, id_pensji, id_premii)
-VALUES
 (1, '2025-10-07', 1, 1, 1, 1),
 (2, '2025-10-08', 3, 2, 2, NULL),
 (3, '2025-10-09', 5, 3, 6, 3),
@@ -74,3 +71,5 @@ VALUES
 (8, '2025-10-07', 6, 8, 3, 8),
 (9, '2025-10-08', 8, 9, 9, 9),
 (10, '2025-10-09', 10, 10, 8, 10);
+
+SELECT * FROM ksiegowosc.wynagrodzenie;

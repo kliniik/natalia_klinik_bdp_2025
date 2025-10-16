@@ -5,8 +5,7 @@ CREATE TABLE ksiegowosc.pracownicy (
     imie varchar,
     nazwisko varchar,
     adres varchar,
-    telefon varchar,
-);
+    telefon varchar );
 
 COMMENT ON TABLE ksiegowosc.pracownicy IS 'Tabela przechowująca informacje o pracownikach';
 
@@ -17,7 +16,7 @@ CREATE TABLE ksiegowosc.godziny(
     data date,
     liczba_godzin int,
     id_pracownika int,
-    FOREIGN KEY (id_pracownika) REFERENCES ksiegowosc.pracownicy(id_pracownika),
+    FOREIGN KEY (id_pracownika) REFERENCES ksiegowosc.pracownicy(id_pracownika)
 );
 
 COMMENT ON TABLE ksiegowosc.godziny IS 'Tabela przechowująca informacje o godzinach pracy pracowników';
@@ -27,7 +26,7 @@ COMMENT ON TABLE ksiegowosc.godziny IS 'Tabela przechowująca informacje o godzi
 CREATE TABLE ksiegowosc.pensja (
     id_pensji int PRIMARY KEY,
     stanowisko varchar,
-    kwota float,
+    kwota float
 );
 
 COMMENT ON TABLE ksiegowosc.pensja IS 'Tabela przechowująca informacje o pensjach pracowników';
@@ -37,7 +36,7 @@ COMMENT ON TABLE ksiegowosc.pensja IS 'Tabela przechowująca informacje o pensja
 CREATE TABLE ksiegowosc.premia (
     id_premii int PRIMARY KEY,
     rodzaj varchar,
-    kwota float,
+    kwota float
 );
 
 COMMENT ON TABLE ksiegowosc.pracownicy IS 'Tabela przechowująca informacje o premiach pracowników';
@@ -58,7 +57,7 @@ CREATE TABLE ksiegowosc.wynagrodzenie (
     CONSTRAINT fk_pensja
         FOREIGN KEY (id_pensji) REFERENCES ksiegowosc.pensja(id_pensji),
     CONSTRAINT fk_premia
-        FOREIGN KEY (id_premii) REFERENCES ksiegowosc.premia(id_premii),
+        FOREIGN KEY (id_premii) REFERENCES ksiegowosc.premia(id_premii)
 );
 
 COMMENT ON TABLE ksiegowosc.wynagrodzenie IS 'Tabela przechowująca informacje o wynagrodzeniach pracowników';
