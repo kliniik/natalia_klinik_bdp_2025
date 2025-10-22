@@ -1,0 +1,2 @@
+-- Zainstaluj rozszerzenie PostGIS dla bazy danych PostgreSQL
+-- (sprawdź, czy najnowsza dostępna wersja oprogramowania wspiera PostGIS)
