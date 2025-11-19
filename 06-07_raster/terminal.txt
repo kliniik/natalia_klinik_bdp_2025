@@ -6,6 +6,3 @@ pg_restore -U postgres -p 5433 -d postgis_raster -Fc "C:\Users\48726\Desktop\STU
 & "C:\Program Files\PostgreSQL\16\bin\raster2pgsql.exe" -s 3763 -N -32767 -t 100x100 -I -C -M -d "C:\Users\48726\Desktop\STUDIA\semestr_7\bazy_danych_przestrzennych\repozytorium\06-07_raster\06_raster_data\srtm_1arc_v3.tif" rasters.dem | psql -d postgis_raster -h localhost -U postgres -p 5433
 
 & "C:\Program Files\PostgreSQL\16\bin\raster2pgsql.exe" -s 3763 -N -32767 -t 128x128 -I -C -M -d "C:\Users\48726\Desktop\STUDIA\semestr_7\bazy_danych_przestrzennych\repozytorium\06-07_raster\06_raster_data\Landsat8_L1TP_RGBN.TIF" rasters.landsat8 | psql -d postgis_raster -h localhost -U postgres -p 5433
-
-przykład 6-4:
-gdal_translate -co COMPRESS=DEFLATE -co PREDICTOR=2 -co ZLEVEL=9 PG:"host=localhost port=5432 dbname=postgis_raster user=postgres password=postgis schema=natalia_klinik table=porto_ndvi mode=2" porto_ndvi.tiff
